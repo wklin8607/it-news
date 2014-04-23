@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="color_names">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>White</item>
+        <item>Black</item>
+    </string-array>
+    
+    <string-array name="left_title">
+        <item>@string/news</item>
+        <item>@string/subscription</item>
+        <item>@string/bookmarks</item>
+        <item>@string/discovery</item>
+        </string-array>
+  
+    
+    <string-array name="list_text_size">
+        <item>@string/Small</item>
+        <item>@string/Normal</item>
+        <item>@string/Large</item>
+    </string-array>
+    <string-array name="list_text_size_value">
+        <item>15</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+        <string-array name="list_text_size_value2">
+        <item>15</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+    
+</resources>

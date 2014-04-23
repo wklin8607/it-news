@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.news"
+    package="com.org.news.ui"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.GET_TASKS"/>
     <application
+        android:name="com.org.news.ui.UILApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme" 
+        >
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Baidu	Market" />
+        <!-- 您从百度网站获取的APP	KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="4fb0932fe2" />
+        
+ 		<meta-data android:name="APP_ID" android:value="da1a8d83136985a8ddba13d2832df0f9"/> 
+		<meta-data android:name="APP_PID" android:value="google"/>
         <activity
-            android:name="com.android.news.MainActivity"
+            android:name="com.org.news.ui.Splash"
+            android:configChanges="orientation|keyboard|screenSize"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +47,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity
+            android:name="com.org.news.ui.Main"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboard|screenSize" >
+        </activity>
+        <activity
+            android:name="com.org.news.ui.ReadPager"
+            android:configChanges="orientation|keyboard|screenSize" >
+        </activity>
+                <activity
+            android:name="com.org.news.ui.ReadPage"
+            android:configChanges="orientation|keyboard|screenSize" >
+        </activity>
+        
+                <activity
+            android:name="com.org.news.ui.BookmarkRead"
+            android:configChanges="orientation|keyboard|screenSize" >
+        </activity>
+        
+        <activity
+            android:name="com.org.news.ui.Preferences"
+            android:configChanges="orientation|keyboard|screenSize" >
+        </activity>
 
+        <provider
+            android:name="com.org.news.provider.PostProvider"
+            android:authorities="com.org.news.provider.PostProvider"
+            android:exported="false" >
+        </provider>
+        
+    </application>
 </manifest>

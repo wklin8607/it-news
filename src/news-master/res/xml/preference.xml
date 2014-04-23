@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/set" >
+        <Preference
+            android:icon="@drawable/ic_content_discard"
+            android:key="clear_cache"
+            android:title="@string/clear_cache" />
+        <ListPreference 
+            android:key="text_size"
+            android:title="@string/article_text_size"
+            android:icon="@drawable/ic_text_size"
+            android:defaultValue="15" 
+            android:entryValues="@array/list_text_size_value" 
+            android:entries="@array/list_text_size" 
+            android:dialogTitle="@string/article_text_size"
+            /> 
+    </PreferenceCategory>
+
+</PreferenceScreen>
