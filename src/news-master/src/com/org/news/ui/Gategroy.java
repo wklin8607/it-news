@@ -5,10 +5,13 @@ import com.android.volley.toolbox.NetworkImageView;
 import com.org.news.view.MyGridView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
@@ -27,7 +30,34 @@ public class Gategroy extends BaseFragment {
 		init();
 		mGridAdapter = new GridAdapter();
 		mGridView.setAdapter(mGridAdapter);
+		mGridView.setOnItemClickListener(new GVOnItemClickListener());
+		
 		return view;
+	}
+	private class GVOnItemClickListener implements OnItemClickListener{
+
+		@Override
+		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+				long arg3) {
+			// TODO Auto-generated method stub
+			
+			Intent intent = new Intent(getActivity(),SubGategory.class);
+			Bundle bundle = new Bundle();
+
+			switch (arg2) {
+			case 0:
+				bundle.putString("gategroy", "information");
+				bundle.putString("title", getString(R.string.information));
+				break;
+
+			default:
+				return;
+			}
+			intent.putExtras(bundle);
+			startActivity(intent);
+
+		}
+		
 	}
 	private void init(){
 		titles = getResources().getStringArray(R.array.gategroy_list);

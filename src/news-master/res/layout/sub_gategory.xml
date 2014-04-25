@@ -6,10 +6,10 @@
     android:fadingEdge="none"
     >
     <com.org.news.view.MyGridView
-        android:id="@+id/grid"
+        android:id="@+id/sub_grid"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:columnWidth="120dp"
+        android:columnWidth="300dp"
         android:gravity="center"
         android:horizontalSpacing="8dp"
         android:numColumns="auto_fit"

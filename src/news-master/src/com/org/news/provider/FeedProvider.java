@@ -18,7 +18,7 @@ import android.util.Log;
 public class FeedProvider extends ContentProvider {
 
     public static final String AUTHORITY = "com.org.news.provider.FeedProvider";
-    public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/wordpress");
+    public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/feed");
     public static final String CONTENT_TYPE = "vnd.android.cursor.dir/com.org.news.provider";
     public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/com.org.news.provider";
     public static final String DEFAULT_SORT_ORDER = "score DESC";
@@ -30,6 +30,7 @@ public class FeedProvider extends ContentProvider {
     public static final String LINK = "link";
     public static final String SUBSCRIPTION = "subscription";
     public static final String LOGO = "logo";
+    public static final String GATEGORY = "gategory";
     
     private static final String DATABASE_NAME = "feed.db";
     private static final int DATABASE_VERSION = 1;
@@ -56,6 +57,7 @@ public class FeedProvider extends ContentProvider {
 				        + LINK + " TEXT,"
 				        + TITLE + " TEXT,"
 				        + SUBSCRIPTION + " TEXT,"
+				        + GATEGORY + " TEXT,"
 				        + LOGO + " TEXT"
 				        + ");");
 			} catch (SQLException e) {

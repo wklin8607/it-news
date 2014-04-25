@@ -65,7 +65,10 @@
             android:name="com.org.news.ui.BookmarkRead"
             android:configChanges="orientation|keyboard|screenSize" >
         </activity>
-        
+        <activity
+            android:name="com.org.news.ui.SubGategory"
+            android:configChanges="orientation|keyboard|screenSize" >
+        </activity>
         <activity
             android:name="com.org.news.ui.Preferences"
             android:configChanges="orientation|keyboard|screenSize" >
