@@ -16,7 +16,30 @@
         <item>@string/discovery</item>
         </string-array>
   
-    
+    <string-array name="gategroy_list">
+        <item>@string/information</item>
+        <item>@string/internet</item>
+        <item>@string/syb</item>
+        <item>@string/science</item>
+        <item>@string/it</item>
+        <item>@string/soft</item>
+        <item>@string/product</item>
+        <item>@string/blog</item>
+        <item>@string/programme</item>
+        <item>@string/ebusiness</item>
+    </string-array>
+   	<string-array name="gategroy_icon_list">
+        <item>http://sexy.dy2046.com/app/it_news/gatecroy/blog.jpg</item>
+        <item>http://sexy.dy2046.com/app/it_news/gatecroy/internet.jpg</item>
+        <item>http://sexy.dy2046.com/app/it_news/gatecroy/syb.jpg</item>
+        <item>http://sexy.dy2046.com/app/it_news/gatecroy/science.jpg</item>
+        <item>http://sexy.dy2046.com/app/it_news/gatecroy/it.jpg</item>
+        <item>http://sexy.dy2046.com/app/it_news/gatecroy/soft.jpg</item>
+        <item>http://sexy.dy2046.com/app/it_news/gatecroy/product.jpg</item>
+        <item>http://sexy.dy2046.com/app/it_news/gatecroy/blog.jpg</item>
+        <item>http://sexy.dy2046.com/app/it_news/gatecroy/programme.jpg</item>
+        <item>http://sexy.dy2046.com/app/it_news/gatecroy/ebusiness.jpg</item>
+    </string-array>
     <string-array name="list_text_size">
         <item>@string/Small</item>
         <item>@string/Normal</item>

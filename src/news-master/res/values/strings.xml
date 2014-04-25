@@ -18,6 +18,17 @@
     <string name="bookmarks">收藏</string>
     <string name="discovery">发现更多</string>
     
+    <string name="information">科技资讯</string>
+    <string name="internet">互联网</string>
+    <string name="syb">创业</string>
+    <string name="science">科学</string>
+    <string name="it">IT数码</string>
+    <string name="soft">软件</string>
+    <string name="product">做产品</string>
+    <string name="blog">科技博客</string>
+    <string name="programme">编程</string>
+    <string name="ebusiness">电商</string>
+    
     <string name="set">常规</string>
     <string name="share">共享</string>
     <string name="shareapp">分享app</string>

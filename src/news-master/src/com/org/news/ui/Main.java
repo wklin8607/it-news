@@ -310,11 +310,7 @@ public class Main extends BaseActivity{
 			case 2:
 				return ReadNow.newInstance("wxxh","http://sexy.dy2046.com/wxxh/xmlrpc.php");
 			case 3:
-				return ReadNow.newInstance("rqll","http://sexy.dy2046.com/rqll/xmlrpc.php");
-			case 4:
-				return ReadNow.newInstance("dpxs","http://sexy.dy2046.com/dpxs/xmlrpc.php");
-			case 5:
-				return Bookmark.newInstance("", "");
+				return new Gategroy();
 				
 			default:
 				break;
@@ -325,7 +321,7 @@ public class Main extends BaseActivity{
 		@Override
 		public int getCount() {
 			// TODO Auto-generated method stub
-			return 6;
+			return 4;
 		}
 
     	

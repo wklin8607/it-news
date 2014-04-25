@@ -12,4 +12,7 @@
     <color name="splashbg">#FFBB33</color>
     <color name="listbg">#9fcccccc</color>
     <color name="pressed">#5FCCCCCC</color>
+    
+    <color name="item_pressed_false">#00000000</color>
+    <color name="item_pressed_true">#5fcccccc</color>
 </resources>

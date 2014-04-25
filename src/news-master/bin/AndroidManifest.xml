@@ -76,6 +76,10 @@
             android:authorities="com.org.news.provider.PostProvider"
             android:exported="false" >
         </provider>
-        
+        <provider
+            android:name="com.org.news.provider.FeedProvider"
+            android:authorities="com.org.news.provider.FeedProvider"
+            android:exported="false" >
+        </provider>
     </application>
 </manifest>
